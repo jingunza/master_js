@@ -5,7 +5,7 @@ test('Function getLongestElement must exist', () => {
     expect(getLongestElement).not.toBe(undefined);
 });
 
-test('Function must returns the length of the longest string in the array.', () => {
+test('Function must returns the longest string in the array.', () => {
     const getLongestElement = rewire('./app.js').__get__("getLongestElement");
 
     expect(getLongestElement(['one', 'two', 'three'])).toBe('three');

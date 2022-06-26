@@ -4,6 +4,15 @@ var obj = {
 
 function getOddElementsAtProperty(obj, key) {
     // your code here
+    if (!Array.isArray(obj[key])){
+      return [];
+    } else if (obj[key].length==0) {
+      return [];
+    } else {
+      return obj[key].filter(function(item, index){
+        if (index%2==0){return item}
+      })
+    }
 }
 
 var output = getOddElementsAtProperty(obj, 'key');

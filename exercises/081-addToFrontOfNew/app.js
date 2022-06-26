@@ -1,6 +1,10 @@
 
 function addToFrontOfNew(arr, element) {
     // Write your function here
+    let newArray = arr.map(item => item)
+    newArray.unshift(element);
+    return newArray;
+
 }
 
 var input = [1, 2];
